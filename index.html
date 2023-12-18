@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Monedas Chile</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Monedas Nacional</h1>
+      <label for="monto">Monto en Pesos Chilenos:</label>
+      <input type="number" id="monto" placeholder="Ingrese el monto" />
+
+      <label for="moneda">Moneda a convertir:</label>
+      <select id="moneda">
+        <option value="dolar">Dólar estadounidense</option>
+        <option value="euro">Euro</option>
+      </select>
+
+      <button id="botonConvertir">Convertir</button>
+      <p id="resultado"></p>
+
+      <canvas id="grafico" width="600" height="300"></canvas>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
